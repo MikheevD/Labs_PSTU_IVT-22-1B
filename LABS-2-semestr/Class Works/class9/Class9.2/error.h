@@ -1,0 +1,16 @@
+
+#ifndef MAIN_CPP_ERROR_H
+#define MAIN_CPP_ERROR_H
+#include "iostream"
+#include "string"
+
+using namespace std;
+
+class error {
+    string str;
+public:
+    error(string s) { str = s; }
+    void what() { cout << str << endl; }
+};
+
+#endif //MAIN_CPP_ERROR_H
